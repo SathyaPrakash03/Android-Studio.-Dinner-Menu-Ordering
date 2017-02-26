@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.davidsyoun.fixedpricemeal.MainActivity">
+
+    <ImageView
+        android:id="@+id/restaurant"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/restaurant"/>
+    <Button
+        android:id="@+id/appetizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "CHOOSE YOUR APPETIZER COURSE"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/pasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "CHOOSE YOUR PASTA COURSE"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/meat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "CHOOSE YOUR MEAT/FISH COURSE"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/dessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "CHOOSE YOUR DESSERT COURSE"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/appetizerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/pastaStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/meatStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/dessertStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/startOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR CHOICES AND START OVER"
+        android:onClick="clearBtn"
+        />
+    <Button
+        android:id="@+id/confirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM ORDER"
+        android:onClick="confirmBtn" />
+
+</LinearLayout>
